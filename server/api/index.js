@@ -1,7 +1,9 @@
 'use strict'
 
-const router = require('express').Router()
+const router = require('express').Router();
+const candiesRouter = require('./routes/candies');
 
+router.use('/candies', candiesRouter);
 // Your routes go here!
 // NOTE: Any routes that you put here are ALREADY mounted on `/api`
 // You can put all routes in this file HOWEVER,
